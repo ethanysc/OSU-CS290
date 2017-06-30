@@ -1,0 +1,168 @@
+<!--
+  Name: Yu-Sheng Ethan Chang
+  Class: OSU CS290 Summer 2017
+  Date: 06-30-2017
+  Description: Simple HTML/CSS implementation of tables, inputs, and POST/GET forms
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>HW: HTML/CSS</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+<body>
+
+<!-- Basic structure and information of the table -->
+<table>
+  <caption>Fast Food Chain Battle</caption>
+  <thead>
+    <tr>
+      <th></th>
+      <th>McDonald's</th>
+      <th>KFC</th>
+      <th>Wendy's</th>
+      <th>In N Out</th>
+      <th>Taco Bell</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="body">
+      <td><i>McDonald's</i></td>
+      <td>N/A</td>
+      <td>McDonald's</td>
+      <td>Wendy's</td>
+      <td>In N Out</td>
+      <td>McDonald's</td>
+    </tr>
+    <tr class="body">
+      <td><i>KFC</i></td>
+      <td>McDonald's</td>
+      <td>N/A</td>
+      <td>Wendy's</td>
+      <td>In N Out</td>
+      <td>Taco Bell</td>
+    </tr>
+    <tr class="body">
+      <td><i>Wendy's</i></td>
+      <td>Wendy's</td>
+      <td>Wendy's</td>
+      <td>N/A</td>
+      <td>In N Out</td>
+      <td>Wendy's</td>
+    </tr>
+    <tr class="body">
+      <td><i>In N Out</i></td>
+      <td>In N Out</td>
+      <td>In N Out</td>
+      <td>In N Out</td>
+      <td>N/A</td>
+      <td>In N Out</td>
+    </tr>
+    <tr class="body">
+      <td><i>Taco Bell</i></td>
+      <td>McDonald's</td>
+      <td>Taco Bell</td>
+      <td>Wendy's</td>
+      <td>In N Out</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="2">In N Out Won The Battle</td>
+      <td colspan="4">Wendy's Was Second Place</td>
+    </tr>
+  </tfoot>
+</table>
+
+<!-- Basic information of an unordered list -->
+<section>
+  <h4 class="list-heading">Things About Me</h4>
+  <ul>
+    <li>Studied Biochemistry in college</li>
+    <li>Started coding 3 months ago</li>
+    <li>Enjoying this program</li>
+  </ul>
+</section>
+
+<!-- Cascading div -->
+<div class="outer-content">
+  <div class="inner-content">
+    Div Within A Div: Div-Ception
+  </div>
+</div>
+
+<!-- POST form -->
+<form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="POST">
+  <fieldset>
+    <legend>POST form</legend>
+    <p>
+      <label>Enter text: 
+        <input type="text" name="text_input" size="25" maxlength="50">
+      </label>
+    </p>
+    <p>
+      <label>Enter numbers: 
+        <input type="number" name="numerical_input">
+      </label>
+    </p>
+    <p>
+      <label>Enter password: 
+        <input type="password" name="password_input">
+      </label>
+    </p>
+    <p>
+      <label>Select a candy: 
+        <br />
+        <input type="radio" name="candy" value="snickers">Snickers
+        <br />
+        <input type="radio" name="candy" value="skittles">Skittles
+        <br />
+        <input type="radio" name="candy" value="mentos">Mentos
+        <br />
+      </label>
+      <input type="submit" value="submit">
+      <input type="reset">
+    </p>
+  </fieldset>
+  <br />
+
+<!-- GET form -->
+<form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php" method="GET">
+  <fieldset>
+    <legend>GET form</legend>
+    <p>
+      <label>Enter text: 
+        <input type="text" name="text_input" size="25" maxlength="50">
+      </label>
+    </p>
+    <p>
+      <label>Enter numbers: 
+        <input type="number" name="numerical_input">
+      </label>
+    </p>
+    <p>
+      <label>Enter password: 
+        <input type="password" name="password_input">
+      </label>
+    </p>
+    <p>
+      <label>Select a candy: 
+        <br />
+        <input type="radio" name="candy" value="snickers">Snickers
+        <br />
+        <input type="radio" name="candy" value="skittles">Skittles
+        <br />
+        <input type="radio" name="candy" value="mentos">Mentos
+        <br />
+      </label>
+      <input type="submit" value="submit">
+      <input type="reset">
+    </p>
+  </fieldset>
+  <br />
+
+</body>
+</html>
